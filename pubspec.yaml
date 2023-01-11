@@ -38,6 +38,8 @@ dependencies:
   image: ^3.0.2
   intl: ^0.18.0
   oktoast: ^3.3.1
+  pos_printer_manager: ^0.0.5
+  webcontent_converter: ^0.0.8+3
 
 dev_dependencies:
   flutter_lints: ^2.0.0

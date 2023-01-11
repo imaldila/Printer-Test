@@ -7,6 +7,8 @@ import 'package:intl/intl.dart';
 import 'package:printer_test/screens/blue_thermal_printer_screen.dart';
 import 'package:printer_test/screens/esc_pos_bluetooth_screen.dart';
 
+import 'screens/pos_printer_manager_screen.dart';
+
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
 
@@ -35,6 +37,15 @@ class HomeView extends StatelessWidget {
                 ),
               ),
               child: const Text('Package esc_pos_bluetooth'),
+            ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () => Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const PosPrinterManagerScreen(),
+                ),
+              ),
+              child: const Text('Package pos_printer_manager'),
             ),
             const SizedBox(height: 16),
           ],

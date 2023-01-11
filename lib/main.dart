@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:pos_printer_manager/pos_printer_manager.dart';
 import 'package:printer_test/home.dart';
 
-void main() {
+void main() async {  WidgetsFlutterBinding.ensureInitialized();
+
+  /// ensure printer profile is loaded
+  await CapabilityProfile.ensureProfileLoaded();
+  print("ensured");
   runApp(const MyApp());
 }
 
